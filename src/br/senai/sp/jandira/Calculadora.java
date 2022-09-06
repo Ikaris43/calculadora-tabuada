@@ -13,8 +13,17 @@ public class Calculadora {
 		cliente.minimoMultiplicador = 5;
 		cliente.maximoMultiplicador = 10;
 		
-		cliente.getResultadoMultiplicador();
+		String[] resultado = cliente.getTabuada();
+		
+		int i = 0;
+		while (i < resultado.length) {
+			System.out.println(resultado[i]);
+			i++;
+			
+		}
+		}
+
 		
 	}
 
-}
+

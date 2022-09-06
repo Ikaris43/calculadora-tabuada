@@ -6,18 +6,17 @@ import javax.swing.JOptionPane;
 
 public class RecolhedorDeDados {
 
-	public double multiplicador;
-	public double minimoMultiplicador;
-	public double maximoMultiplicador;
-	public double[] tabela = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-	public double result;
-	public double i = 0;
+	public int multiplicador;
+	public int minimoMultiplicador;
+	public int maximoMultiplicador;
+	public int result;
+	public int i = 0;
 	
-		public void getResultadoMultiplicador() {
+
+
+		public void getRecolhedorDeDados() {
 			while (i < maximoMultiplicador) {
 				result = multiplicador * minimoMultiplicador;
-				System.out.printf("%s X %s = %s", multiplicador, minimoMultiplicador, result);
-				System.out.println("");
 				minimoMultiplicador++;
 				i++;
 				
@@ -25,7 +24,28 @@ public class RecolhedorDeDados {
 		}
 		
 		
-		
+		public String[] getTabuada() {
+				int tamanho = maximoMultiplicador - minimoMultiplicador + 1;
+				String[] tabuada = new String[tamanho];
+				
+				 while (minimoMultiplicador <= maximoMultiplicador) {
+					 
+					 result = multiplicador * minimoMultiplicador;
+						
+						
+						String resultado = multiplicador + " X  " + minimoMultiplicador + " = " + result;
+						tabuada[i] = resultado;
+						
+						minimoMultiplicador++;
+						i++;
+						
+				} return tabuada;
+				 
+				
+			}
+			
+			
+		}
 	
 	
 	
@@ -36,4 +56,4 @@ public class RecolhedorDeDados {
 	
 	
 	
-}
+
