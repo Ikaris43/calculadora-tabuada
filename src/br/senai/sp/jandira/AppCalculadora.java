@@ -1,8 +1,9 @@
 package br.senai.sp.jandira;
 
+import br.senai.sp.jandira.gui.FrameCalculadora;
 import br.senai.sp.jandira.model.RecolhedorDeDados;
 
-public class Calculadora {
+public class AppCalculadora {
 
 	public static void main(String[] args) {
 		
@@ -13,17 +14,26 @@ public class Calculadora {
 		cliente.minimoMultiplicador = 5;
 		cliente.maximoMultiplicador = 10;
 		
-		String[] resultado = cliente.getTabuada();
+		FrameCalculadora tela = new FrameCalculadora();
+	
+		tela.titulo = "Calculadora";
+		tela.altura = 700;
+		tela.largura = 500;
 		
-		int i = 0;
-		while (i < resultado.length) {
-			System.out.println(resultado[i]);
-			i++;
+		tela.criarTela();
+		
+	
+		
+		
 			
 		}
-		}
+	
+	
+	
+	
+}
 
 		
-	}
+	
 
 
