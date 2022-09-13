@@ -8,11 +8,6 @@ public class AppCalculadora {
 	public static void main(String[] args) {
 		
 
-		RecolhedorDeDados cliente = new RecolhedorDeDados();
-		
-		cliente.multiplicador = 8;
-		cliente.minimoMultiplicador = 5;
-		cliente.maximoMultiplicador = 10;
 		
 		FrameCalculadora tela = new FrameCalculadora();
 	

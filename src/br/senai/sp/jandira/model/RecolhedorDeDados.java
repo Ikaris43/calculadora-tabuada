@@ -1,9 +1,5 @@
 package br.senai.sp.jandira.model;
 
-import java.util.Scanner;
-
-import javax.swing.JOptionPane;
-
 public class RecolhedorDeDados {
 
 	public int multiplicador;
@@ -14,15 +10,6 @@ public class RecolhedorDeDados {
 	
 
 
-		public void getRecolhedorDeDados() {
-			while (i < maximoMultiplicador) {
-				result = multiplicador * minimoMultiplicador;
-				minimoMultiplicador++;
-				i++;
-				
-			} 
-		}
-		
 		
 		public String[] getTabuada() {
 				int tamanho = maximoMultiplicador - minimoMultiplicador + 1;
